@@ -2,7 +2,7 @@
 {
     "name": "rm_stage_select_screen",
     "id": "9d359348-b658-4ce5-a201-01a219fffb60",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

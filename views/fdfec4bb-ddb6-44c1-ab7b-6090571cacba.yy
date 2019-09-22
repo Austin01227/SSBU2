@@ -51,7 +51,8 @@
         "dd816be7-21ea-406a-831c-a025b73f20db",
         "a5c97354-6b27-4286-afe1-a4ae0a54a028",
         "4e814a4d-132a-47c2-9ebe-43bb8b1b95ec",
-        "aac62f81-b409-42f2-a66b-9d67491deda0"
+        "aac62f81-b409-42f2-a66b-9d67491deda0",
+        "4012b05b-0ed3-4351-9bbe-8f04364fc6fd"
     ],
     "filterType": "GMSprite",
     "folderName": "Character 2",

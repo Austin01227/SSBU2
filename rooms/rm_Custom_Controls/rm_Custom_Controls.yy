@@ -2,7 +2,7 @@
 {
     "name": "rm_Custom_Controls",
     "id": "6e3be3e0-d82b-4986-b8ce-addce9b152f5",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

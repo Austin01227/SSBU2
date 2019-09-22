@@ -8,7 +8,9 @@
         "1a36d081-a7ec-4097-8912-83697af3fe5c",
         "37879354-b4d0-44a2-b0fa-4a81f7eb370b",
         "db498b7c-2532-4138-9c14-5306cb6d681c",
-        "d9ae88bc-5454-4811-868c-8dbbec01de02"
+        "d9ae88bc-5454-4811-868c-8dbbec01de02",
+        "ebf7eee7-20b6-43c5-96f4-e79b1a7b3e6b",
+        "d0c7e1b6-f0eb-4704-a7f5-991562dfc35b"
     ],
     "filterType": "GMSprite",
     "folderName": "Stage Select Screen",
