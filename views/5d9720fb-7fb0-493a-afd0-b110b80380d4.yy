@@ -63,7 +63,7 @@
         "2736804a-65ff-4c4d-8482-401099f8b8a3"
     ],
     "filterType": "GMSprite",
-    "folderName": "Character 1",
+    "folderName": "Character_luigi",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

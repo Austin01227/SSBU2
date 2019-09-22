@@ -1,5 +1,5 @@
 ///MACROS
-#macro version "Alpha 0.0.7.0"
+#macro version "Alpha 0.0.13.0"
 #region Game Constants
 #macro debug				false
 #macro show_hitboxes		true
@@ -177,7 +177,7 @@
 	#macro number_of_buttons 12
 
 	//Input buffer length
-	#macro buff 6
+	#macro buff 8
 	#macro max_buffer_length 60
 	#macro tech_buffer_time 20
 	#macro tech_lockout_time 40

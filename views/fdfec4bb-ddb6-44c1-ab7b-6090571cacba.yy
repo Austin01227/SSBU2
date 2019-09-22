@@ -55,7 +55,7 @@
         "4012b05b-0ed3-4351-9bbe-8f04364fc6fd"
     ],
     "filterType": "GMSprite",
-    "folderName": "Character 2",
+    "folderName": "Character_kirby",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

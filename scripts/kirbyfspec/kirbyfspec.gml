@@ -64,7 +64,8 @@ if (run)
 		{
 			if(on_ground())
 			{
-				attack_phase = 4;
+				set_speed(0, 0, false, false);
+				attack_phase = 5;
 				attack_frame = 15;
 			}
 			
@@ -124,13 +125,24 @@ if (run)
 				var _damage = calculate_smash_damage(15, charge, 180, 1);
 				var _hitbox = create_melee(20, -20, 0.7, 0.7, _damage, 13, 0.5, 15, 50, 4, HITBOX_SHAPE.circle, 0);
 				
-				attack_phase++;
+				attack_phase = 5;
 				attack_frame = 30;
 			}
 		}
-		//Finish
+		//Aerial Endlag
 		case 4:
 		{
+			if(on_ground())
+			{
+				attack_phase++;
+				attack_frame = 15;
+			}
+		}
+		//Finish
+		case 5:
+		{
+			if(attack_frame != 0 && on_ground())
+				set_speed(0, 0, false, false);
 			if (attack_frame == 0 && on_ground())
 			{
 				attack_stop(PLAYER_STATE.idle);

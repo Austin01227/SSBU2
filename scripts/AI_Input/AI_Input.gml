@@ -2,7 +2,7 @@
 ///@param count
 //Fakes inputs for the AI to move around and do things	
 if (!is_AI) return false;
-
+/*
 var _mytype = AI_TYPE.rand;
 
 #region Input Buffer Count

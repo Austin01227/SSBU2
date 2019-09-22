@@ -71,7 +71,7 @@
         "3883647f-58b6-4c6c-b92c-ee208f0450bf"
     ],
     "filterType": "GMSprite",
-    "folderName": "Character0_Sprites",
+    "folderName": "Character_mario",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

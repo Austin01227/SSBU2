@@ -22,15 +22,15 @@ max_fall_speed = 8;
 fast_fall_speed = 11;
 //Jumping
 jumpsquat_time = 3;
-jump_speed = 10.5;
-shorthop_speed = 4.5;
-double_jump_speed = 6;
+jump_speed = 9;
+shorthop_speed = 6.5;
+double_jump_speed = 8;
 max_double_jumps = 5;
 land_time = 3;
 //Aerial Movment
 air_accel = 0.5;
-max_air_speed = 5.5;
-max_air_speed_dash = 7;
+max_air_speed = 4.5;
+max_air_speed_dash = 6;
 air_friction = 0.04;
 //Ground Movement
 ground_friction = 0.4;
@@ -42,11 +42,11 @@ walk_speed = 3.25;
 walk_accel = 0.5;
 walk_turn_time = 6;
 //Dashing
-dash_speed = 8.5;
+dash_speed = 7.5;
 dash_time = 10;
 dash_accel = 4;
 //Running
-run_speed = 5.5;
+run_speed = 6;
 run_accel = 0.8;
 run_turn_time = 10;
 run_turn_accel = 0.8;

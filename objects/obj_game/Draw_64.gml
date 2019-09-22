@@ -86,7 +86,7 @@ for(var i = 0; i < number_of_players; i++)
 		(
 		46 + status_bar_space * (i + 1),
 		player_status_y,
-		string(_player.damage),
+		string(round(_player.damage)),
 		spr_damage_font,
 		34, //38
 		_player.damage_text_x,

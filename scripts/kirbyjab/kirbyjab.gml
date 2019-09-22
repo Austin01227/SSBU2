@@ -103,7 +103,7 @@ if (run)
 			{
 				break;
 			}
-			//Continue to next jab
+			//Continue to rapid jab
 			if (button(INPUT.attack, 12))
 			{
 				attack_phase++;
@@ -116,8 +116,27 @@ if (run)
 			}
 			break;
 		}
-		//Jab 3
+		//Rapid Jab Start
 		case 6:
+		{
+			create_melee(20, 0, 0.8, 0.5, 0.6, 3, 0, 5, 45, 10, HITBOX_SHAPE.circle, 2, FLIPPER.sakurai);
+		}
+		//Rapid Jab Multihit
+		case 7:
+		{
+			if (button_hold(INPUT.attack, 1) && attack_frame == 1)
+			{
+				reset_hitbox_group(collided, 2);
+				attack_frame = 4;
+			}
+			if(attack_frame == 0)
+			{
+				attack_phase++;
+				attack_frame = 4;
+			}
+		}
+		//Jab Finisher
+		case 8:
 		{
 			//Animation
 			if (attack_frame == 0)
@@ -125,13 +144,13 @@ if (run)
 				attack_phase++;
 				attack_frame = 15;
 				set_speed(0, 0, false, false);
-				var _hitbox = create_melee(15, 10, 0.5, 0.3, 4, 6, 0.9, 6, 60, 3, HITBOX_SHAPE.circle, 2);
+				var _hitbox = create_melee(15, 10, 0.5, 0.3, 4, 6, 0.9, 6, 60, 3, HITBOX_SHAPE.circle, 3);
 				set_hitbox_property(_hitbox, HITBOX_PROPERTY.hit_sfx, snd_hit_strong);
 			}
 			break;
 		}
-		//Jab 3 Endlag
-		case 7:
+		//Jab Finisher Endlag
+		case 9:
 		{
 			if (attack_frame == 0)
 			{
@@ -141,7 +160,7 @@ if (run)
 			break;
 		}
 		//Endlag
-		case 8:
+		case 10:
 		{
 			if (attack_frame == 0)
 			{

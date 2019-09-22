@@ -10,11 +10,11 @@ with(obj_player)
         else
                 {
                 Custom_Controls_Load(cc, 0);
-                is_AI = true;
+                is_AI = false;
                 }
     if (_num == 1)
         {
-        uses_keyboard = true;
+        uses_keyboard = false;
         is_AI = false;
         }
     _num++;
