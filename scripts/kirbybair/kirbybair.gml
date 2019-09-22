@@ -18,7 +18,7 @@ if (run)
 		case PHASE.start:
 		{
 			//Animation
-			anim_sprite = spr_kirby_bair;	//REPLACE
+			anim_sprite = spr_kirby_bair;
 			anim_speed = 0;
 			anim_frame = 0;
 		
@@ -30,10 +30,13 @@ if (run)
 		//Sweetspot
 		case 0:
 		{
+			if(attack_phase == 0 && attack_frame == 3)
+				anim_frame = 1;
 			if (attack_frame == 0)
 			{
 				attack_phase++;
 				attack_frame = 3;
+				anim_frame = 2;
 				create_melee(-20, 5, 0.8, 0.5, 12, 8, 0.5, 8, 45, 3, HITBOX_SHAPE.circle, 0, FLIPPER.sakurai_reverse);
 			}
 			break;
@@ -44,7 +47,7 @@ if (run)
 			if (attack_frame == 0)
 			{
 				attack_phase++;
-				attack_frame = 8;
+				attack_frame = 12;
 				create_melee(-20, 5, 0.75, 0.5, 6, 6, 0.5, 6, 45, 12, HITBOX_SHAPE.circle, 0, FLIPPER.sakurai_reverse);
 			}
 			break;
@@ -52,15 +55,17 @@ if (run)
 		//Endlag
 		case 2:
 		{
-			if (attack_frame == 0)
+			if (attack_phase == 2 && attack_frame == 0)
 			{
 				attack_phase++;
-				attack_frame = 20;
+				attack_frame = 16;
 			}
 		}
 		//Finish
 		case 3:
 		{
+			if(attack_frame == 8)
+				anim_frame = 0;
 			if (attack_frame == 0)
 			{
 				set_state(PLAYER_STATE.aerial);

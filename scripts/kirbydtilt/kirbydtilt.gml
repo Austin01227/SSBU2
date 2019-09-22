@@ -24,11 +24,14 @@ if (run)
 		//Startup -> Active
 		case 0:
 		{
+			if(attack_frame > 0)
+				anim_frame = 1;
 			if (attack_frame == 0)
 			{
 				attack_phase++;
+				anim_frame = 2;
 				attack_frame = 6;
-				create_melee(25, 28, 1, 0.5, 6, 4, 0.5, 5, 20, 3, HITBOX_SHAPE.circle, 0);
+				create_melee(25, 23, 0.8, 0.3, 6, 4, 0.5, 5, 20, 3, HITBOX_SHAPE.circle, 0);
 			}
 			break;
 		}
@@ -38,6 +41,7 @@ if (run)
 			if (attack_frame == 0)
 			{
 				attack_phase++;
+				anim_frame = 1;
 				attack_frame = 11;
 			}
 			break;
@@ -45,6 +49,8 @@ if (run)
 		//Finish
 		case 2:
 		{
+			if(attack_frame < 5)
+				anim_frame = 0;
 			if (attack_frame == 0)
 			{
 				attack_stop(PLAYER_STATE.crouching);

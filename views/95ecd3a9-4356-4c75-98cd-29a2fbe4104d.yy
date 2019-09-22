@@ -34,7 +34,7 @@
         "0083e2e0-97ea-4206-a672-c20d19e651ed"
     ],
     "filterType": "GMScript",
-    "folderName": "Character1_Scripts",
+    "folderName": "Character_Luigi_Scripts",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
