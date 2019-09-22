@@ -7,7 +7,8 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "871a558f-61d9-40dc-8c70-43beccffd9ba"
+        "871a558f-61d9-40dc-8c70-43beccffd9ba",
+        "e3b38487-c44a-46ce-958b-72f9b423b9f4"
     ],
     "IsDnD": false,
     "layers": [
@@ -16,8 +17,8 @@
             "name": "GameLayer",
             "id": "6f5874b6-efa0-4c51-bd49-d5e1965e1879",
             "depth": 0,
-            "grid_x": 32,
-            "grid_y": 32,
+            "grid_x": 1,
+            "grid_y": 1,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -25,7 +26,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_4687B7A6","id": "871a558f-61d9-40dc-8c70-43beccffd9ba","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4687B7A6","objId": "e0006063-346e-48b2-8f97-7968b81fa87c","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 160,"y": 288}
+{"name": "inst_4687B7A6","id": "871a558f-61d9-40dc-8c70-43beccffd9ba","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4687B7A6","objId": "e0006063-346e-48b2-8f97-7968b81fa87c","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 160,"y": 288},
+{"name": "inst_A89FCF5","id": "e3b38487-c44a-46ce-958b-72f9b423b9f4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_A89FCF5","objId": "4aecafe3-1824-4770-90c4-bd6bfb32a00c","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 110,"y": 187}
             ],
             "layers": [
 

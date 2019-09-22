@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-follow = 0;
+player_1 = true

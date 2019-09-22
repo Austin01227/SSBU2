@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-follow = 0;
+follow = 1

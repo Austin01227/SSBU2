@@ -93,7 +93,7 @@ grab_hold_id = noone;
 grabbed_id = 0;
 throw_stick_has_reset = false;
 //Controller cached values
-uses_keyboard = true;
+uses_keyboard = false;
 cc = [];
 controller = -1;
 control_states_l = [];

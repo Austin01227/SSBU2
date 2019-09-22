@@ -10,7 +10,7 @@ with(obj_player)
         else
                 {
                 Custom_Controls_Load(cc, 0);
-                is_AI = false;
+                is_AI = true;
                 }
     if (_num == 1)
         {

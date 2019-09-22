@@ -44,7 +44,9 @@
         "5a954b72-39a3-4889-80c3-8411f3587026",
         "68583191-5d64-4f6e-916a-51521b14fc26",
         "03735cc2-5e82-4af8-befa-6b6a311b1989",
-        "2a7b769e-4ad8-4049-90dd-3516101bac1d"
+        "2a7b769e-4ad8-4049-90dd-3516101bac1d",
+        "28cdfd1a-d95e-4e24-a608-1fa64658c08b",
+        "d7150c53-07df-4bfa-9365-5026f0bfb195"
     ],
     "filterType": "GMScript",
     "folderName": "Premade_Attack_Scripts",

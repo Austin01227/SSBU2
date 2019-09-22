@@ -1,3 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-follow = 0;
+if follow = 0
+{
+x = mouse_x
+y = mouse_y
+}
