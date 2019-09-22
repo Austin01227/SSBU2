@@ -32,6 +32,7 @@ if (run)
 			if (attack_frame == 0)
 			{
 				attack_phase++;
+				anim_frame = 1;
 				attack_frame = 8;
 				set_speed(0, 0, true, false);
 				var _hitbox = create_melee(15, 10, 0.5, 0.3, 3, 5, 0.1, 3, 75, 3, HITBOX_SHAPE.circle, 0);
@@ -42,6 +43,7 @@ if (run)
 		//Jab 1 Endlag
 		case 1:
 		{
+			anim_frame = 2;
 			if (attack_frame == 0)
 			{
 				attack_phase++;
@@ -61,6 +63,7 @@ if (run)
 			if (button(INPUT.attack, 12))
 			{
 				attack_phase++;
+				anim_frame = 4;
 				attack_frame = 3;
 			}
 			//Auto end
@@ -88,6 +91,7 @@ if (run)
 		//Jab 2 Endlag
 		case 4:
 		{
+			anim_frame = 4;
 			if (attack_frame == 0)
 			{
 				attack_phase++;
@@ -107,6 +111,7 @@ if (run)
 			if (button(INPUT.attack, 12))
 			{
 				attack_phase++;
+				anim_frame = 5;
 				attack_frame = 4;
 			}
 			//Auto end
@@ -144,7 +149,7 @@ if (run)
 				attack_phase++;
 				attack_frame = 15;
 				set_speed(0, 0, false, false);
-				var _hitbox = create_melee(15, 10, 0.5, 0.3, 4, 6, 0.9, 6, 60, 3, HITBOX_SHAPE.circle, 3);
+				var _hitbox = create_melee(15, 10, 0.5, 0.3, 4, 6, 0.9, 6, 45, 3, HITBOX_SHAPE.circle, 3, FLIPPER.sakurai);
 				set_hitbox_property(_hitbox, HITBOX_PROPERTY.hit_sfx, snd_hit_strong);
 			}
 			break;
