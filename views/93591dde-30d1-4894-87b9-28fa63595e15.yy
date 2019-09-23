@@ -23,7 +23,7 @@
         "5a169846-b67a-4231-b304-f5b6e76df428"
     ],
     "filterType": "GMScript",
-    "folderName": "Characterkirby_Scripts",
+    "folderName": "Character_Kirby_Scripts",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

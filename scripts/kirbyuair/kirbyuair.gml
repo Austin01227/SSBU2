@@ -19,7 +19,7 @@ if (run)
 		case PHASE.start:
 		{
 			//Animation
-			anim_sprite = spr_kirby_uair;	//REPLACE
+			anim_sprite = spr_kirby_uair;
 			anim_speed = 0;
 			anim_frame = 0;
 		
@@ -31,21 +31,30 @@ if (run)
 		//Active
 		case 0:
 		{
+			if(attack_frame == 8)
+				anim_frame = 1;
 			if(attack_frame == 5)
-				create_melee(15, 13, 0.4, 0.4, 8, 8, 0.5, 6, 55, 1, HITBOX_SHAPE.circle, 0);
+			{
+				anim_frame = 2;
+				create_melee(22, 23, 0.45, 0.45, 8, 8, 0.5, 6, 55, 1, HITBOX_SHAPE.circle, 0);
+			}
 			if(attack_frame == 4)
-				create_melee(20, -9, 0.4, 0.4, 8, 8, 0.5, 6, 55, 1, HITBOX_SHAPE.circle, 0);
+				create_melee(30, 1, 0.45, 0.45, 8, 8, 0.5, 6, 55, 1, HITBOX_SHAPE.circle, 0);
 			if(attack_frame == 3)
-				create_melee(16, -26, 0.4, 0.4, 8, 8, 0.5, 6, 55, 1, HITBOX_SHAPE.circle, 0);
+				create_melee(26, -16, 0.45, 0.45, 8, 8, 0.5, 6, 55, 1, HITBOX_SHAPE.circle, 0);
 			if(attack_frame == 2)
-				create_melee(0, -35, 0.4, 0.4, 8, 8, 0.5, 6, 55, 1, HITBOX_SHAPE.circle, 0);
+			{
+				anim_frame = 3;
+				create_melee(7, -28, 0.45, 0.45, 8, 8, 0.5, 6, 55, 1, HITBOX_SHAPE.circle, 0);
+			}
 			if(attack_frame == 1)
-				create_melee(-13, -35, 0.4, 0.4, 8, 8, 0.5, 6, 55, 1, HITBOX_SHAPE.circle, 0);
+				create_melee(-11, -28, 0.45, 0.45, 8, 8, 0.3, 6, 115, 1, HITBOX_SHAPE.circle, 0);
 			if (attack_frame == 0)
 			{
 				attack_phase++;
 				attack_frame = 6;
-				create_melee(-28, -28, 0.4, 0.4, 8, 8, 0.5, 6, 55, 1, HITBOX_SHAPE.circle, 0);
+				anim_frame = 4;
+				create_melee(-26, -18, 0.45, 0.45, 8, 8, 0.3, 6, 115, 1, HITBOX_SHAPE.circle, 0);
 			}
 			break;
 		}
@@ -55,6 +64,7 @@ if (run)
 			if (attack_frame == 0)
 			{
 				attack_phase++;
+				anim_frame = 5;
 				attack_frame = 13;
 			}
 		}

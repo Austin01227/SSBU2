@@ -82,6 +82,50 @@
             ]
         },
         {
+            "id": "08ebe86d-33b6-4e20-8ca6-8ac47defecff",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "a2a25824-aae9-4651-9275-6b4315cbae04",
+            "compositeImage": {
+                "id": "3346617e-70e9-4648-9199-6edf9f329376",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "08ebe86d-33b6-4e20-8ca6-8ac47defecff",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "26ab2aa3-7f89-4f71-9088-65197b197288",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "08ebe86d-33b6-4e20-8ca6-8ac47defecff",
+                    "LayerId": "5c9c8c75-810d-48ab-95be-433579152044"
+                }
+            ]
+        },
+        {
+            "id": "b3cc366f-043f-4070-b567-e4e0aa56c665",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "a2a25824-aae9-4651-9275-6b4315cbae04",
+            "compositeImage": {
+                "id": "2751ec11-c776-4f8d-90b5-c396a02e45dd",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "b3cc366f-043f-4070-b567-e4e0aa56c665",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "0875c997-b5e7-48b7-a4e8-09ed8a443ec0",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "b3cc366f-043f-4070-b567-e4e0aa56c665",
+                    "LayerId": "5c9c8c75-810d-48ab-95be-433579152044"
+                }
+            ]
+        },
+        {
             "id": "5f816cab-3ed1-4c1b-a350-9b86508c60e7",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
@@ -120,7 +164,7 @@
             "visible": true
         }
     ],
-    "origin": 4,
+    "origin": 9,
     "originLocked": false,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
@@ -132,5 +176,5 @@
     "type": 0,
     "width": 40,
     "xorig": 20,
-    "yorig": 22
+    "yorig": 25
 }
