@@ -79,16 +79,22 @@ if (run)
 		//Burning
 		case 3:
 		{
+			if(attack_frame == 21)
+				anim_frame = 1;
+			if(attack_frame == 19)
+				anim_frame = 2;
 			if(attack_frame > 18)
 			{
 				set_speed(sign(facing)*10, 0, false, false);
 			}
 			if(attack_frame == 18)	//Sweetspot
 			{
+				anim_frame = 3;
 				create_melee(0, 0, 1, 1, 12, 10, 0.5, 10, 45, 2, HITBOX_SHAPE.circle, 0, FLIPPER.sakurai);
 			}
 			if(attack_frame == 15)	//Mid hit
 			{
+				anim_frame = 4;
 				create_melee(0, 0, 1, 1, 8, 8, 0.5, 6, 50, 2, HITBOX_SHAPE.circle, 0);
 			}
 			if(attack_frame < 15)
@@ -97,12 +103,15 @@ if (run)
 			}
 			if(attack_frame == 12)	//Sourspot
 			{
+				anim_frame = 2;
 				create_melee(0, 0, 1, 1, 6, 8, 0.25, 5, 60, 4, HITBOX_SHAPE.circle, 0);
 			}
 			//if(attack_frame == 8)
 				//{
 				//set_speed(sign(facing)*2, 0, false, false);
 				//}
+			if(attack_frame == 8)
+				anim_frame = 0;
 			if(attack_frame == 0)
 			{
 				attack_phase++;

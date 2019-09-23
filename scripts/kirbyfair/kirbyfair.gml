@@ -30,42 +30,56 @@ if (run)
 		//First hit
 		case 0:
 		{
+			if(attack_frame == 4)
+				anim_frame = 1;
 			if (attack_frame == 0)
 			{
 				attack_phase++;
 				attack_frame = 8;
-				create_melee(30, 15, 0.9, 0.5, 3, 5, 0, 6, 75, 2, HITBOX_SHAPE.circle, 0, FLIPPER.autolink);
+				anim_frame = 2;
+				create_melee(30, 5, 0.9, 0.3, 3, 5, 0, 6, 75, 2, HITBOX_SHAPE.circle, 0, FLIPPER.autolink);
 			}
 			break;
 		}
 		//Second hit
 		case 1:
 		{
+			if(attack_frame > 0)
+				anim_frame = 3;
 			if (attack_frame == 0)
 			{
 				attack_phase++;
+				anim_frame = 4;
 				attack_frame = 8;
-				create_melee(30, 15, 0.9, 0.5, 3, 5, 0, 6, 75, 2, HITBOX_SHAPE.circle, 1, FLIPPER.autolink);
+				create_melee(30, 5, 0.9, 0.3, 3, 5, 0, 6, 75, 2, HITBOX_SHAPE.circle, 1, FLIPPER.autolink);
 			}
 			break;
 		}
 		//Third hit
 		case 2:
 		{
+			if(attack_frame == 6)
+				anim_frame = 5;
+			if(attack_frame == 3)
+				anim_frame = 6;
 			if (attack_frame == 0)
 			{
 				attack_phase++;
 				attack_frame = 8;
-				create_melee(30, 15, 0.9, 0.5, 4, 8, 0.5, 8, 45, 5, HITBOX_SHAPE.circle, 2, FLIPPER.sakurai);
+				anim_frame = 7;
+				create_melee(30, 5, 0.9, 0.5, 4, 8, 0.5, 8, 45, 5, HITBOX_SHAPE.circle, 2, FLIPPER.sakurai);
 			}
 			break;
 		}
 		//Endlag
 		case 3:
 		{
+			if(attack_frame == 3)
+				anim_frame = 5;
 			if (attack_frame == 0)
 			{
 				attack_phase++;
+				anim_frame = 0;
 				attack_frame = 17;
 			}
 			break;

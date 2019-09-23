@@ -40,7 +40,7 @@
         "046fecd3-e041-4038-96ea-41e3a4369089"
     ],
     "filterType": "GMScript",
-    "folderName": "Character0_Scripts",
+    "folderName": "Character_Mario_Scripts",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

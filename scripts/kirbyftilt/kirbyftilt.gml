@@ -14,7 +14,7 @@ if (run)
 		case PHASE.start:
 		{
 			//Animation
-			anim_sprite = spr_kirby_ftilt;	//REPLACE
+			anim_sprite = spr_kirby_ftilt;
 			anim_speed = 0;
 			anim_frame = 0;
 		
@@ -24,11 +24,13 @@ if (run)
 		//Startup -> Active
 		case 0:
 		{
+			anim_frame = 1;
 			if (attack_frame == 0)
 			{
 				attack_phase++;
+				anim_frame = 2;
 				attack_frame = 6;
-				create_melee(20, 0, 1, 0.4, 7, 10, 0.4, 5, 90, 4, HITBOX_SHAPE.circle, 0, FLIPPER.sakurai);
+				create_melee(20, 5, 1, 0.4, 7, 10, 0.4, 5, 90, 4, HITBOX_SHAPE.circle, 0, FLIPPER.sakurai);
 			}
 			break;
 		}
@@ -38,6 +40,7 @@ if (run)
 			if (attack_frame == 0)
 			{
 				attack_phase++;
+				anim_frame = 3;
 				attack_frame = 13;
 			}
 			break;
