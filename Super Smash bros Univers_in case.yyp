@@ -3951,6 +3951,14 @@
             }
         },
         {
+            "Key": "94e0f900-63ce-4439-a62c-ce1f12af7533",
+            "Value": {
+                "id": "130df715-31fb-44a0-a68c-8fadf4381526",
+                "resourcePath": "sprites\\spr_kirby_fspec_air\\spr_kirby_fspec_air.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "952f7e65-9241-4e53-bc04-9fd2e5861fc9",
             "Value": {
                 "id": "0f9b4a25-5273-45e4-95bf-4b1aa7c9beb8",
@@ -4338,7 +4346,7 @@
             "Key": "a23a0b6a-91b2-426b-a390-960a8967ff61",
             "Value": {
                 "id": "33f33d08-aabe-4afe-945e-8234ac5e69fd",
-                "resourcePath": "sprites\\spr_kirby_ground_fspec\\spr_kirby_ground_fspec.yy",
+                "resourcePath": "sprites\\spr_kirby_fspec_ground\\spr_kirby_fspec_ground.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5700,14 +5708,6 @@
                 "id": "5a0c1588-3349-4e6b-9d4d-685817496792",
                 "resourcePath": "rooms\\rm_Driller\\rm_Driller.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "d8aa2938-12d2-47c9-9517-28e221031ddc",
-            "Value": {
-                "id": "f9ed0ba9-5158-4205-8380-4f03afc6e2f2",
-                "resourcePath": "sprites\\s_kirby_uspecial_fall\\s_kirby_uspecial_fall.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

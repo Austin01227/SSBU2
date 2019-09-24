@@ -11,7 +11,7 @@ if (run)
 		case PHASE.start:
 		{
 			//Animation
-			anim_sprite = spr_kirby_uspecial_up;	//REPLACE
+			anim_sprite = spr_kirby_uspecial_up;
 			anim_frame = 0;
 			anim_speed = 0;
 			
@@ -23,12 +23,17 @@ if (run)
 		//Startup
 		case 0:
 		{
+			if(attack_frame == 5)
+				anim_frame = 1;
+			if(attack_frame == 2)
+				anim_frame = 2;
 			if (attack_frame == 0)
 			{
 				set_speed(0, -18, false, false);
-				create_melee(30, 35, 0.8, 0.5, 3, 16.5, 0, 8, 80, 2, HITBOX_SHAPE.circle, 0, FLIPPER.autolink);
-				attack_phase++;
+				create_melee(35, 25, 1, 0.3, 3, 15.5, 0, 8, 80, 2, HITBOX_SHAPE.circle, 0, FLIPPER.autolink);
+				anim_frame = 3;
 				attack_frame = 10;
+				attack_phase++;
 			}
 			break;
 		}
@@ -51,8 +56,8 @@ if (run)
 			
 			if (attack_frame >= 0)
 			{
-				create_melee(30, -20, 0.6, 0.4, 6, -1 * (attack_frame - 18), 0, 8, 88, 9, HITBOX_SHAPE.circle, 0, FLIPPER.autolink);
-				create_melee(10, -20, 0.3, 0.4, 6, -1 * (attack_frame - 18), 0, 8, 88, 9, HITBOX_SHAPE.circle, 0, FLIPPER.autolink);
+				create_melee(45, -15, 0.7, 0.4, 6, -1 * (attack_frame - 18), 0, 8, 88, 9, HITBOX_SHAPE.circle, 0, FLIPPER.autolink);
+				create_melee(20, -15, 0.7, 0.4, 6, -1 * (attack_frame - 18), 0, 8, 88, 9, HITBOX_SHAPE.circle, 0, FLIPPER.autolink);
 			}
 			if(attack_frame == 0)
 			{
@@ -61,8 +66,8 @@ if (run)
 					set_speed(0, 8, true, true);
 				}
 				
-				attack_phase++;
 				attack_frame = 28;
+				attack_phase++;
 			}
 			break;
 		}
@@ -87,12 +92,15 @@ if (run)
 			//Drop
 			if(attack_frame <= 16 && attack_frame >= 9 && button(INPUT.special, 8, true))
 			{
+				anim_frame = 5;
 				set_speed(0, 18, true, false);
-				create_melee(10, 40, 0.6, 0.3, 6, 13, 0.3, 11, 270, 300, HITBOX_SHAPE.circle, 1);
-				create_melee(33, 40, 0.3, 0.3, 6, 13, 0.3, 11, 55, 300, HITBOX_SHAPE.circle, 1);
+				create_melee(20, 40, 0.6, 0.3, 6, 13, 0.3, 11, 270, 5, HITBOX_SHAPE.circle, 1);
+				create_melee(45, 40, 0.6, 0.3, 6, 13, 0.3, 11, 55, 5, HITBOX_SHAPE.circle, 1);
 				attack_phase++;
-				attack_frame = 15;
+				attack_frame = 25;
 			}
+			if(attack_frame == 14)
+				anim_frame = 4;
 			//End attack
 			if (attack_frame == 0)
 			{
@@ -103,12 +111,20 @@ if (run)
 		//Falling hitbox
 		case 3:
 		{
+			if(attack_frame == 20)
+			{
+				create_melee(20, 40, 0.6, 0.3, 6, 13, 0.3, 11, 55, 300, HITBOX_SHAPE.circle, 1);
+				create_melee(45, 40, 0.6, 0.3, 6, 13, 0.3, 11, 55, 300, HITBOX_SHAPE.circle, 1);
+			}
+			
 			if !stick_tilted(Lstick, DIR.down) && check_ledge_grab() return;
+			
 			if(on_ground() && attack_phase == 3)
 			{
+				anim_frame = 6;
 				destroy_all_attached_hitboxes(my_hitboxes);
 				set_speed(0, 0, false, false);
-				create_melee(30, 35, 0.8, 0.5, 2, 12, 0.3, 10, 60, 3, HITBOX_SHAPE.circle, 2);
+				create_melee(20, 20, 1.4, 0.5, 2, 12, 0.5, 10, 60, 3, HITBOX_SHAPE.circle, 2);
 				if(facing == 1)
 					var proj = custom_projectile(obj_kirby_cutterwave, 30, 30, 1, 1, 3, 5, 0.3, 45, 5, HITBOX_SHAPE.circle, 10*facing, 0, FLIPPER.sakurai);
 				else if(facing == -1)
